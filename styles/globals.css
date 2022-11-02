@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "MontBold";
+  src: url("/fonts/MontBold.woff");
+}
+
+@font-face {
+  font-family: "MontHeavy";
+  src: url("/fonts/MontHeavy.woff");
+}
+@font-face {
+  font-family: "Mont";
+  src: url("/fonts/MontRegular.woff");
+}
+
+@font-face {
+  font-family: "MontSemiBold";
+  src: url("/fonts/MontSemiBold.woff");
+}

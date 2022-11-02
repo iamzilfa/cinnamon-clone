@@ -1,7 +1,21 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// import your icons
+import { faRss } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedin,
+  faSquareBehance,
+  faInstagram,
+  faFacebook,
+  faDribbble,
+} from "@fortawesome/free-brands-svg-icons";
+import Button from "./Button";
+
 const Footer = () => {
   return (
     <div className="bg-footerBanner bg-blackrussian h-full">
-      <div className="px-6 pt-14">
+      <div className="px-6 pt-14 pb-28">
         <div className="flex flex-col gap-y-20">
           <div className="flex flex-col gap-10">
             <div className="w-40 h-5">
@@ -60,9 +74,10 @@ const Footer = () => {
                   />
                 </div>
                 <div>
-                  <button className="bg-blue-600 text-white pt-4 py-8 pb-3 w-[343px] h-12">
+                  <Button primary>Subscribe</Button>
+                  {/* <button className="bg-blue-600 text-white pt-4 py-8 pb-3 w-[343px] h-12">
                     Subscribe
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -81,8 +96,24 @@ const Footer = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-lightgrey underline">hello@cinnamon.agency</p>
+                  <p className="text-lightgrey underline">
+                    hello@cinnamon.agency
+                  </p>
                 </div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-y-5 -mt-9">
+              <div className="text-white flex justify-center items-center gap-5 border-t border-b py-8 border-b-bordergrey border-t-topgrey">
+                <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                <FontAwesomeIcon icon={faDribbble} size="lg" />
+                <FontAwesomeIcon icon={faSquareBehance} size="lg" />
+                <FontAwesomeIcon icon={faInstagram} size="lg" />
+                <FontAwesomeIcon icon={faFacebook} size="lg" />
+                <FontAwesomeIcon icon={faRss} size="lg" />
+              </div>
+              <div className="flex items-center justify-center gap-8 text-white text-base">
+                <p>© 2022 Cinnamon</p>
+                <p className="underline">Privacy Policy</p>
               </div>
             </div>
           </div>

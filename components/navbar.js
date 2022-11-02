@@ -7,13 +7,13 @@ import { faPlay } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <div>
-      <div className="sticky top-0 bg-white">
-        <div className="flex justify-between items-center px-24 py-5">
-          <div className="w-40 h-5">
+      <div className="fixed top-0 bg-white w-full">
+        <div className="flex justify-between items-cente px-5 py-6">
+          <div className="w-40 h-5 block lg:hidden">
             <img src="/vectors/logo-dark.svg" alt="" />
           </div>
           <div>
-            
+            <img src="/vectors/Cinnamon logo-1 (1).svg" alt="" />
           </div>
           <div className="hidden lg:flex items-center gap-8">
             <div>
