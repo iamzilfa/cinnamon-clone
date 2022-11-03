@@ -84,15 +84,15 @@ export default function Home() {
           <div className="px-6 mx-auto container">
             <div className="lg:mb-40">
               <div>
-                {cards.map(({ card, index }) => {
+                {cards.map((card, index) => {
                   return (
                     <Product
                       key={index}
-                      className={card.className}
-                      images={card.images}
-                      tags={card.tags}
-                      title={card.title}
-                      subtitle={card.subtitle}
+                      className={card?.className}
+                      images={card?.images}
+                      tags={card?.tags}
+                      title={card?.title}
+                      subtitle={card?.subtitle}
                     ></Product>
                   );
                 })}
@@ -286,7 +286,7 @@ export default function Home() {
             <div className="mx-auto container">
               <div className="flex flex-col items-center gap-y-14 lg:py-[160px]">
                 <div className="flex flex-col text-titleblack items-center lg:flex-col-reverse text-[40px] lg:text-[54px] lg:leading-[72px] font-montbold text-center leading-[56px] px-6 pt-8">
-                  <h1>Let's work together.</h1>
+                  <h1>Let &apos;s work together.</h1>
                   <h1 className="hidden lg:block">Have a project in mind?</h1>
                 </div>
                 <div>
