@@ -11,7 +11,10 @@ export default function Home() {
     {
       className: "bg-emerald",
       images: "/images/Mockup_1.png",
-      tags: [{id: 1, text:"project"}, {id: 2, text:"quality assurance"}],
+      tags: [
+        { id: 1, text: "project" },
+        { id: 2, text: "quality assurance" },
+      ],
       title: (
         <>
           Corrily: Optimize prices
@@ -25,7 +28,10 @@ export default function Home() {
     {
       className: "bg-mustard",
       images: "/images/Fiona_Thumbnail.png",
-      tags: [{id: 1, text:"product"}, {id: 2, text:"web development"}],
+      tags: [
+        { id: 1, text: "product" },
+        { id: 2, text: "web development" },
+      ],
       title: (
         <>
           Fiona: Engage &
@@ -39,7 +45,11 @@ export default function Home() {
     {
       className: "bg-thepurple",
       images: "/images/Mockup_1.png",
-      tags: [{id: 1, text:"product design"}, {id: 2, text:"web development"}, {id: 3, text:"quality assurance"}],
+      tags: [
+        { id: 1, text: "product design" },
+        { id: 2, text: "web development" },
+        { id: 3, text: "quality assurance" },
+      ],
       title: (
         <>
           Ukulele:
@@ -63,8 +73,8 @@ export default function Home() {
                 </h1>
                 <div className="text-lightgrey font-semibold text-[18px] leading-[30px] max-w-[640] mb-8 lg:text-xl lg:leading-8 lg:font-semibold lg:max-w-[640px] lg:mb-8">
                   Extend your team with our high performing specialists or hire
-                  us to shape your product from scratch. Either way, we&lsquo;ll get
-                  your product off the ground and build a momentum for your
+                  us to shape your product from scratch. Either way, we&lsquo;ll
+                  get your product off the ground and build a momentum for your
                   success.
                 </div>
               </div>
@@ -74,9 +84,10 @@ export default function Home() {
           <div className="px-6 mx-auto container">
             <div className="lg:mb-40">
               <div>
-                {cards.map((card) => {
+                {cards.map(({ card, index }) => {
                   return (
                     <Product
+                      key={index}
                       className={card.className}
                       images={card.images}
                       tags={card.tags}
