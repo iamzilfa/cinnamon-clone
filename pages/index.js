@@ -118,6 +118,46 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="bg-whitesmoke  py-24">
+            <div className="px-6">
+              <h2 className="text-[40px] leading-[56px] mb-4 font-montbold font-normal text-titleblack">
+                Who we are
+              </h2>
+              <p className="text-base leading-[26px] mb-8 max-w-md text-matterhorn">
+                Meet our international teams made up of 86 innovators, branched
+                into 8 departments, that influence the market throughout 20
+                different countries.
+              </p>
+              <div className="mb-6 max-w-[280px]">
+                <img src="/images/image (6).png" alt="" />
+              </div>
+              <div>
+                <Button primary className="w-[168px]">
+                  Read About Us
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          <div className="py-24 bg-white">
+            <div className="max-w-[1120px] px-6 container mx-auto">
+              <div className="max-w-[300px]">
+                <img src="/images/image (8).png" alt="" />
+              </div>
+              <div className="mt-12 text-matterhorn">
+                <p className="text-matterhorn text-base leading-[26px]">
+                  Seize the unique opportunity to participate in a wide range of
+                  courses conducted by professionals with an impeccable
+                  reputation in the digital industry.
+                </p>
+                <div className="mt-12">
+                  <Button primary>See How It Works</Button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="py-24 bg-whitesmoke">
             <div className="px-6">
               <h2 className="text-[40px] leading-[56px] mb-8 font-montbold">
