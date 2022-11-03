@@ -10,8 +10,8 @@ const Product = ({ images, title, subtitle, tags, className }) => {
       </div>
       <div className="flex flex-col gap-y-5">
         <div className="uppercase flex flex-wrap items-center gap-5 text-xs leading-3 text-[#666666] font-montbold mt-5">
-          {tags?.map((el, key) => (
-            <div key={key}>{el}</div>
+          {tags?.map((el) => (
+            <div key={el.id}>{el.text}</div>
           ))}
         </div>
         <h1 className="text-titleblack text-[32px] font-montbold leading-[44px] lg:text-[40px] lg:leading-[56px] lg:font-normal">

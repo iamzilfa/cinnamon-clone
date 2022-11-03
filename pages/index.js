@@ -11,7 +11,7 @@ export default function Home() {
     {
       className: "bg-emerald",
       images: "/images/Mockup_1.png",
-      tags: ["project", "quality assurance"],
+      tags: [{id: 1, text:"project"}, {id: 2, text:"quality assurance"}],
       title: (
         <>
           Corrily: Optimize prices
@@ -25,7 +25,7 @@ export default function Home() {
     {
       className: "bg-mustard",
       images: "/images/Fiona_Thumbnail.png",
-      tags: ["product", "web development"],
+      tags: [{id: 1, text:"product"}, {id: 2, text:"web development"}],
       title: (
         <>
           Fiona: Engage &
@@ -39,7 +39,7 @@ export default function Home() {
     {
       className: "bg-thepurple",
       images: "/images/Mockup_1.png",
-      tags: ["product design", "web development", "quality assurance"],
+      tags: [{id: 1, text:"product design"}, {id: 2, text:"web development"}, {id: 3, text:"quality assurance"}],
       title: (
         <>
           Ukulele:
@@ -63,7 +63,7 @@ export default function Home() {
                 </h1>
                 <div className="text-lightgrey font-semibold text-[18px] leading-[30px] max-w-[640] mb-8 lg:text-xl lg:leading-8 lg:font-semibold lg:max-w-[640px] lg:mb-8">
                   Extend your team with our high performing specialists or hire
-                  us to shape your product from scratch. Either way, we’ll get
+                  us to shape your product from scratch. Either way, we&lsquo;ll get
                   your product off the ground and build a momentum for your
                   success.
                 </div>
