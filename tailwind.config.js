@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container:{},
       backgroundImage: {
         footerBanner: "url('/images/noise.png')",
       },
