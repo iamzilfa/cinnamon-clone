@@ -1,71 +1,83 @@
 import Head from "next/head";
 import Image from "next/image";
-import Button from "../components/Button";
-import Layout from "../components/layout";
+import Button from "../components/ui/Button";
+import Together from "../components/sections/homepage/together";
+import Layout from "../components/layout/layout";
 import Paragraph from "../components/Paragraph";
 import Product from "../components/Product";
 import Service from "../components/Service";
+import Header from "../components/sections/homepage/header";
+import Price from "../components/sections/homepage/price";
+import Services from "../components/sections/homepage/services";
+import AgileTeam from "../components/sections/homepage/agile";
 
 export default function Home() {
-  let cards = [
-    {
-      className: "bg-emerald",
-      images: "/images/Mockup_1.png",
-      tags: [
-        { id: 1, text: "project" },
-        { id: 2, text: "quality assurance" },
-      ],
-      title: (
-        <>
-          Corrily: Optimize prices
-          <br />
-          to maximize revenue
-        </>
-      ),
-      subtitle:
-        "Corrily tailors your prices and discounts to the needs of different user segments in order to increase your revenue. Cinnamon was tasked with creating a new visual identity for Corrily and incorporating a fresh, and stunning website redesign.",
-    },
-    {
-      className: "bg-mustard",
-      images: "/images/Fiona_Thumbnail.png",
-      tags: [
-        { id: 1, text: "product" },
-        { id: 2, text: "web development" },
-      ],
-      title: (
-        <>
-          Fiona: Engage &
-          <br />
-          Decide
-        </>
-      ),
-      subtitle:
-        "Fiona is a fintech consumer-facing website that enables users to search for financial products, discover them, and receive personalized recommendations.",
-    },
-    {
-      className: "bg-thepurple",
-      images: "/images/Mockup_1.png",
-      tags: [
-        { id: 1, text: "product design" },
-        { id: 2, text: "web development" },
-        { id: 3, text: "quality assurance" },
-      ],
-      title: (
-        <>
-          Ukulele:
-          <br />
-          The largest ukulele tabs archive
-        </>
-      ),
-      subtitle:
-        "Ukulele is the number one ukulele community, where players of any level can find the most complete tabs and chords. Cinnamon offered a complete platform redesign including expansions and new features, focusing on keeping the user longer on the website.",
-    },
-  ];
+  // let cards = [
+  //   {
+  //     className: "bg-emerald",
+  //     images: "/images/Mockup_1.png",
+  //     tags: [
+  //       { id: 1, text: "project" },
+  //       { id: 2, text: "quality assurance" },
+  //     ],
+  //     title: (
+  //       <>
+  //         Corrily: Optimize prices
+  //         <br />
+  //         to maximize revenue
+  //       </>
+  //     ),
+  //     subtitle:
+  //       "Corrily tailors your prices and discounts to the needs of different user segments in order to increase your revenue. Cinnamon was tasked with creating a new visual identity for Corrily and incorporating a fresh, and stunning website redesign.",
+  //   },
+  //   {
+  //     className: "bg-mustard",
+  //     images: "/images/Fiona_Thumbnail.png",
+  //     tags: [
+  //       { id: 1, text: "product" },
+  //       { id: 2, text: "web development" },
+  //     ],
+  //     title: (
+  //       <>
+  //         Fiona: Engage &
+  //         <br />
+  //         Decide
+  //       </>
+  //     ),
+  //     subtitle:
+  //       "Fiona is a fintech consumer-facing website that enables users to search for financial products, discover them, and receive personalized recommendations.",
+  //   },
+  //   {
+  //     className: "bg-thepurple",
+  //     images: "/images/Mockup_1.png",
+  //     tags: [
+  //       { id: 1, text: "product design" },
+  //       { id: 2, text: "web development" },
+  //       { id: 3, text: "quality assurance" },
+  //     ],
+  //     title: (
+  //       <>
+  //         Ukulele:
+  //         <br />
+  //         The largest ukulele tabs archive
+  //       </>
+  //     ),
+  //     subtitle:
+  //       "Ukulele is the number one ukulele community, where players of any level can find the most complete tabs and chords. Cinnamon offered a complete platform redesign including expansions and new features, focusing on keeping the user longer on the website.",
+  //   },
+  // ];
   return (
     <>
       <Layout>
         <main className="pt-20">
-          <div className="bg-footerBanner bg-blackrussian pb-24 mb-24 text-whitesmoke">
+
+          <Header />
+          <Price />
+          <Services />
+          <AgileTeam />
+
+
+          {/* <div className="bg-footerBanner bg-blackrussian pb-24 mb-24 text-whitesmoke">
             <div className="mx-auto container ">
               <div className="px-6 max-w-[1120px] lg:pt-[118px] lg:pb-[160px]">
                 <h1 className="mb-6 text-4xl leading-[58px] font-normal font-montheavy lg:text-[80px] lg:leading-[105px] ">
@@ -79,9 +91,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="px-6 mx-auto container">
+          {/* <div className="px-6 mx-auto container">
             <div className="lg:mb-40">
               <div>
                 {cards.map((card, index) => {
@@ -98,9 +110,9 @@ export default function Home() {
                 })}
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="bg-footerBanner text-white bg-blackrussian py-24 lg:pt-44 lg:pb-40">
+          {/* <div className="bg-footerBanner text-white bg-blackrussian py-24 lg:pt-44 lg:pb-40">
             <div className="px-6 mx-auto container">
               <div>
                 <div className="grid lg:grid-cols-2 lg:gap-8">
@@ -151,9 +163,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="py-24 bg-whitesmoke lg:relative lg:pt-44 lg:pb-40 lg:py-40">
+          {/* <div className="py-24 bg-whitesmoke lg:relative lg:pt-44 lg:pb-40 lg:py-40">
             <div className="hidden lg:block lg:absolute right-0 -bottom-0">
               <img
                 src="images/image (5).png"
@@ -180,7 +192,7 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="pt-[60px] pb-24 lg:pt-[140px] lg:pb-40 lg:relative">
             <div className="relative pb-8 min-h-[132px]">
@@ -266,10 +278,7 @@ export default function Home() {
                 different countries.
               </p>
               <div className="block lg:hidden mb-6 max-w-[280px]">
-                <img
-                  src="/images/image (6).png"
-                  alt=""
-                />
+                <img src="/images/image (6).png" alt="" />
               </div>
               <div className="lg:flex lg:gap-40">
                 <div className="hidden lg:flex lg:flex-col lg:flex-wrap lg:max-h-[310px] lg:w-[70%] lg:mb-[72px]">
@@ -386,7 +395,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-whitesmoke relative">
+          <Together />
+          {/* <div className="bg-whitesmoke relative">
             <div className="hidden lg:block absolute bottom-0 left-0">
               <img src="images/image (4).png" alt="" className="w-[428px]" />
             </div>
@@ -406,7 +416,7 @@ export default function Home() {
                 <img src="images/image (4).png" alt="" className="w-[120px]" />
               </div>
             </div>
-          </div>
+          </div> */}
         </main>
       </Layout>
     </>

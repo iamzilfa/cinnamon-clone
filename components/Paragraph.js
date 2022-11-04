@@ -1,6 +1,6 @@
-import Button from "./Button";
+import Button from "./ui/Button";
 
-const Paragraph = ({paragraph}) => {
+const Paragraph = ({ paragraph }) => {
   return (
     <div className="mt-12 lg:mt-0 text-matterhorn">
       <p className="text-matterhorn text-base leading-[26px]">{paragraph}</p>

@@ -32,7 +32,7 @@ const Navbar = () => {
       >
         <div className="mx-auto container">
           <div className="flex justify-between items-center h-20 w-full px-6">
-            <div className="w-40 h-5">
+            <Link href="/" className="w-40 h-5">
               <img
                 src={
                   isScrolled
@@ -41,7 +41,7 @@ const Navbar = () => {
                 }
                 alt=""
               />
-            </div>
+            </Link>
             <div className="block lg:hidden">
               <img
                 src={
@@ -60,19 +60,19 @@ const Navbar = () => {
                   }
                 >
                   <li>
-                    <Link href="/" className="font-montsemibold text-base leading-5 font-bold cursor-pointer"> Projects</Link>
+                    <Link href="/project" className="font-montsemibold text-base leading-5 font-bold cursor-pointer"> Projects</Link>
                   </li>
                   <li>
-                    <Link href="/" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Services</Link>
+                    <Link href="/service" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Services</Link>
                   </li>
                   <li>
-                    <Link href="/" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">About Us</Link>
+                    <Link href="/aboutUs" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">About Us</Link>
                   </li>
                   <li>
-                    <Link href="/" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Careers</Link>
+                    <Link href="/career" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Careers</Link>
                   </li>
                   <li>
-                    <Link href="/" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Blog</Link>
+                    <Link href="/blog" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Blog</Link>
                   </li>
                 </ul>
               </div>

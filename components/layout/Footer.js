@@ -10,7 +10,7 @@ import {
   faFacebook,
   faDribbble,
 } from "@fortawesome/free-brands-svg-icons";
-import Button from "./Button";
+import Button from "../ui/Button";
 
 const Footer = () => {
   return (
@@ -73,9 +73,8 @@ const Footer = () => {
                     placeholder="Your E-mail"
                   />
                 </div>
-                
-                  <Button primary>Subscribe</Button>
-                
+
+                <Button primary>Subscribe</Button>
               </div>
             </div>
             <div>
