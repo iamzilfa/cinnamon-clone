@@ -3,35 +3,85 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // import your icons
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  function handleScrollChange() {
+    if (window.scrollY > 20) setIsScrolled(true);
+    else {
+      setIsScrolled(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollChange);
+    return () => {
+      window.removeEventListener("scroll", setIsScrolled);
+    };
+  }, []);
   return (
     <div className="">
-      <div className="fixed top-0 flex bg-white w-full z-10 ">
+      <div
+        className={
+          "fixed top-0 flex w-full z-10 " +
+          (isScrolled ? " bg-white " : " bg-footerBanner bg-blackrussian ")
+        }
+      >
         <div className="mx-auto container">
           <div className="flex justify-between items-center h-20 w-full px-6">
             <div className="w-40 h-5">
-              <img src="/vectors/logo-dark.svg" alt="" />
+              <img
+                src={
+                  isScrolled
+                    ? "/vectors/logo-dark.svg"
+                    : "/vectors/logo-white.svg"
+                }
+                alt=""
+              />
             </div>
-            <div className="blok lg:hidden">
-              <img src="/vectors/Cinnamon logo-1 (1).svg" alt="" />
+            <div className="block lg:hidden">
+              <img
+                src={
+                  isScrolled
+                    ? "/vectors/menu.svg"
+                    : "/vectors/mobile-menu-icon-light.0de793a8.svg"
+                }
+              />
             </div>
             <div className="hidden lg:flex items-center gap-8">
               <div>
-                <ul className="flex items-center gap-10 font-sans text-base leading-4">
-                  <li>Projects</li>
-                  <li>Services</li>
-                  <li>About Us</li>
-                  <li>Careers</li>
-                  <li>Blog</li>
+                <ul
+                  className={
+                    "flex items-center gap-10 font-sans text-base leading-4" +
+                    (isScrolled ? " text-black " : " text-white ")
+                  }
+                >
+                  <li>
+                    <Link href="/" className="font-montsemibold text-base leading-5 font-bold cursor-pointer"> Projects</Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Services</Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">About Us</Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Careers</Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Blog</Link>
+                  </li>
                 </ul>
               </div>
               <div className="flex items-center gap-6">
-                <div className="border-2 border-blue-700 rounded-full w-[46px] h-[46px] flex items-center justify-center">
-                  <FontAwesomeIcon icon={faPlay} size="md" color="blue" />
+                <div className={isScrolled ? " border-2 border-blue-700 rounded-full w-[46px] h-[46px] flex items-center justify-center " : "border-2 border-white rounded-full w-[46px] h-[46px] flex items-center justify-center"}>
+                  <FontAwesomeIcon icon={faPlay} size="md" color={isScrolled ? " blue " : " white "} />
                 </div>
                 <div>
-                  <button className="border px-12 py-4 text-white bg-blue-700 flex items-center justify-center">
+                  <button className="border-none px-12 py-4 text-white bg-blue-700 flex items-center justify-center">
                     Contact Us
                   </button>
                 </div>

@@ -6,31 +6,33 @@ module.exports = {
   ],
   theme: {
     extend: {
-      container:{},
+      container: {},
       backgroundImage: {
         footerBanner: "url('/images/noise.png')",
       },
       colors: {
         blackrussian: "#1C1C1C",
         whitesmoke: "#F6F6F6",
-        lightgrey:"#CFCFCF",
-        bordergrey : "#8f8f8f",
-        topgrey : "rgba(143, 143, 143, 0.4)",
-        buttonblue : "#5135FD",
+        lightgrey: "#CFCFCF",
+        bordergrey: "#8f8f8f",
+        topgrey: "rgba(143, 143, 143, 0.4)",
+        buttonblue: "#5135FD",
         titleblack: "#222222",
-        matterhorn :"#525252",
+        matterhorn: "#525252",
         emerald: "#91F1C3",
         mustard: "#50227D",
         thepurple: "#FFCB49",
-        symbcolor: "rgba(81, 53, 255, 0.1)"
+        symbcolor: "rgba(81, 53, 255, 0.1)",
+        greywhite: "#F9F9F9",
+        bottomgrey: "#3F3F3F",
       },
       fontFamily: {
         sans: "'Mont',sans-serif",
-        'montbold' : ["MontBold", "cursive"],
-        'montheavy' : ["MontHeavy", "cursive"],
+        montbold: ["MontBold", "cursive"],
+        montheavy: ["MontHeavy", "cursive"],
         // 'montregular' : ["MontRegular", "cursive"],
-        'montsemibold' : ["MontSemibold", "cursive"]
-      }
+        montsemibold: ["MontSemibold", "cursive"],
+      },
     },
   },
   plugins: [],

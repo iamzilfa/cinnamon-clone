@@ -182,73 +182,136 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="pt-[60px] pb-24 lg:pt-[140px] lg:pb-40">
-            <div className=" container mx-auto px-6">
-              <div className="relative pb-8 min-h-[132px]">
-                <div class="font-montbold absolute -left-[33px] -top-[26px] text-[175px] text-symbcolor">
+          <div className="pt-[60px] pb-24 lg:pt-[140px] lg:pb-40 lg:relative">
+            <div className="relative pb-8 min-h-[132px]">
+              <div className="mx-auto container px-6">
+                <div class="font-montbold absolute -left-[10px] -top-[26px] text-[175px] text-symbcolor lg:text-[258px] lg:-top-14 ">
                   “
                 </div>
-                <h3 className="text-[32px] leading-[44px] font-normal font-montbold pt-12">
-                  They’re consistent, and the communication is good.
-                </h3>
-              </div>
-              <div className="text-[16px] leading-[26px] text-matterhorn">
-                <p>
-                  When I have a deadline, they would work extra hours on the
-                  weekend and after hours. Cinnamon gives the impression of
-                  being a smaller team that’s focused on customers.
-                </p>
-              </div>
-              <div className="mt-16">
-                <div className="w-[68px] mr-6 overflow-hidden rounded-[50%]">
-                  <img src="images/image (9).png" alt="" />
+                <div className="flex flex-cols lg:flex-row  lg:items-center lg:justify-between">
+                  <div className="lg:w-1/2">
+                    <h3 className="text-[32px] mb-8 lg:text-[40px] lg:leading-[56px] leading-[44px] font-normal font-montbold pt-12">
+                      They’re consistent, and the communication is good.
+                    </h3>
+
+                    <div className="text-[16px] leading-[26px] text-matterhorn mb-8">
+                      <p className="text-matterhorn text-base leading-[26px]">
+                        When I have a deadline, they would work extra hours on
+                        the weekend and after hours. Cinnamon gives the
+                        impression of being a smaller team that’s focused on
+                        customers.
+                      </p>
+                    </div>
+                    <div className="mt-16 lg:flex lg:items-center">
+                      <div className="w-[68px] mr-6 overflow-hidden rounded-[50%]">
+                        <img src="images/image (9).png" alt="" />
+                      </div>
+                      <div className="">
+                        <h5 className="font-montbold font-normal text-[20px] text-titleblack leading-[30px] lg:text-2xl lg:leading-[36px]">
+                          Garin Toren,
+                        </h5>
+                        <p className="lg:text-base lg:leading-[26px] text-xs leading-[26px] text-titleblack">
+                          CEO, ping
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="hidden lg:block lg:w-[200px] lg:h-[200px]">
+                    <img
+                      src="/images/image (10).png"
+                      alt=""
+                      className="lg:w-[200px] lg:h-[67.937px]"
+                    />
+                  </div>
                 </div>
-                <h5 className="font-montbold font-normal text-[20px] text-titleblack leading-[30px]">
-                  Garin Toren,
-                </h5>
-                <p className="text-xs leading-[26px] text-titleblack">
-                  CEO, ping
-                </p>
-              </div>
-              <div className="container mx-auto">
-                <div className="mt-[46px] flex items-center gap-14">
-                  <img
-                    src="/images/arrow-left.png"
-                    alt=""
-                    className="h-[27px] w-12"
-                  />
-                  <img
-                    src="/images/arrow-right.png"
-                    alt=""
-                    className="h-[27px] w-12"
-                  />
-                </div>
-                <div className="mt-8 flex items-center gap-5">
-                  <img src="/vectors/arrowRight.6bd387a0.svg" alt="" />
-                  <p className="text-base leading-[26px] font-montbold uppercase text-buttonblue border-b border-b-buttonblue">
-                    View case study
-                  </p>
+                <div className="lg:flex lg:items-center lg:justify-between">
+                  <div className="mt-[46px] flex items-center gap-10">
+                    <img
+                      src="/images/arrow-left.png"
+                      alt=""
+                      className="h-[27px] w-12"
+                    />
+                    <img
+                      src="/images/arrow-right.png"
+                      alt=""
+                      className="h-[27px] w-12"
+                    />
+                  </div>
+                  <div className="mt-8 flex items-center gap-5">
+                    <img src="/vectors/arrowRight.6bd387a0.svg" alt="" />
+                    <p className="text-base leading-[26px] font-montbold uppercase text-buttonblue border-b border-b-buttonblue">
+                      View case study
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-whitesmoke  py-24">
-            <div className="px-6">
-              <h2 className="text-[40px] leading-[56px] mb-4 font-montbold font-normal text-titleblack">
+          <div className="bg-whitesmoke py-24 lg:py-[245px]">
+            <div className="px-6 container mx-auto">
+              <h2 className="text-[40px] leading-[56px] mb-4 font-montbold font-normal text-titleblack lg:mb-8 lg:text-[54px] lg:leading-[72px]">
                 Who we are
               </h2>
-              <p className="text-base leading-[26px] mb-8 max-w-md text-matterhorn">
+              <div className="hidden lg:block mb-6 lg:absolute lg:right-0 lg-top[50%]">
+                <img
+                  src="/images/image (6).png"
+                  alt=""
+                  className="lg-w-[340px] lg:h-[539.212px]"
+                />
+              </div>
+              <p className="text-base leading-[26px] mb-8 max-w-md text-matterhorn lg:mb-16">
                 Meet our international teams made up of 86 innovators, branched
                 into 8 departments, that influence the market throughout 20
                 different countries.
               </p>
-              <div className="mb-6 max-w-[280px]">
-                <img src="/images/image (6).png" alt="" />
+              <div className="block lg:hidden mb-6 max-w-[280px]">
+                <img
+                  src="/images/image (6).png"
+                  alt=""
+                />
               </div>
-              <div>
-                <Button primary>Read About Us</Button>
+              <div className="lg:flex lg:gap-40">
+                <div className="hidden lg:flex lg:flex-col lg:flex-wrap lg:max-h-[310px] lg:w-[70%] lg:mb-[72px]">
+                  <p className="lg:text-xl lg:leading-[30px] mb-6 font-montbold">
+                    Product design
+                  </p>
+
+                  <p className="lg:text-xl lg:leading-[30px] mb-6 font-montbold">
+                    Web development
+                  </p>
+
+                  <p className="lg:text-xl lg:leading-[30px] mb-6 font-montbold">
+                    Mobile development
+                  </p>
+
+                  <p className="lg:text-xl lg:leading-[30px] mb-6 font-montbold">
+                    Quality assurance
+                  </p>
+
+                  <p className="lg:text-xl lg:leading-[30px] mb-6 font-montbold">
+                    Marketing
+                  </p>
+
+                  <p className="lg:text-xl lg:leading-[30px] mb-6 font-montbold">
+                    Project management
+                  </p>
+
+                  <p className="lg:text-xl lg:leading-[30px] mb-6 font-montbold">
+                    Human resources
+                  </p>
+
+                  <p className="lg:text-xl lg:leading-[30px] mb-6 font-montbold">
+                    Sales
+                  </p>
+
+                  <p className="lg:text-xl lg:leading-[30px] mb-6 font-montbold">
+                    Fluffy friends
+                  </p>
+                </div>
               </div>
+
+              <Button primary>Read About Us</Button>
             </div>
           </div>
 
@@ -274,6 +337,50 @@ export default function Home() {
                     paragraph="Seize the unique opportunity to participate in a wide range of courses conducted by professionals with an impeccable reputation in the digital industry.
              "
                   />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-footerBanner bg-blackrussian py-24">
+            <div className="mx-auto container px-6">
+              <div className="grid lg:grid-cols-2 lg:gap-64 px-6">
+                <div className="mb-16">
+                  <h1 className="text-[40px] leading-[56px] mb-4 text-greywhite font-normal font-montbold lg:mb-6 lg:text-[54px] ">
+                    We’re growing
+                  </h1>
+                  <p className="text-base leading-[26px] text-lightgrey mb-8 font-sans">
+                    Jump on board with Cinnamon and get the privilege of working
+                    on challenging projects for leading global companies! Make
+                    the world a better, more connected place.
+                  </p>
+                  <Button primary>See All Positions</Button>
+                </div>
+                <div>
+                  <div>
+                    <div className="flex items-center justify-between cursor-pointer border-b border-bottomgrey py-7">
+                      <p className="font-montsemibold text-2xl w-full leading-[36px] text-greywhite">
+                        Android Developer
+                      </p>
+                      <img src="/images/arrowRightWhite.png" alt="" />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex items-center justify-between cursor-pointer border-b border-bottomgrey py-7">
+                      <p className="font-montsemibold text-2xl w-full leading-[36px] text-greywhite">
+                        Android Developer
+                      </p>
+                      <img src="/images/arrowRightWhite.png" alt="" />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex items-center justify-between cursor-pointer border-b border-bottomgrey py-7">
+                      <p className="font-montsemibold text-2xl w-full leading-[36px] text-greywhite">
+                        Backend Development Team Lead
+                      </p>
+                      <img src="/images/arrowRightWhite.png" alt="" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
