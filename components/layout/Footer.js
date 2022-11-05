@@ -35,15 +35,20 @@ const Footer = () => {
                         Home
                       </Link>
                     </li>
-                    <li><Link href="/product" className="text-lightgrey font-sans text-base">
-                      Product</Link>
+                    <li>
+                      <Link
+                        href="/product"
+                        className="text-lightgrey font-sans text-base"
+                      >
+                        Product
+                      </Link>
                     </li>
                     <li>
                       <Link
                         href="/service"
                         className="text-lightgrey font-sans text-base"
                       >
-                      Services
+                        Services
                       </Link>
                     </li>
                   </ul>
@@ -55,7 +60,7 @@ const Footer = () => {
                         href="/aboutUs"
                         className="text-lightgrey font-sans text-base"
                       >
-                      About Us
+                        About Us
                       </Link>
                     </li>
                     <li>
@@ -78,9 +83,9 @@ const Footer = () => {
                 </div>
               </div>
               <div className="hidden lg:block">
-                <p className="text-lightgrey underline">
+                <div className="text-lightgrey underline">
                   hello@cinnamon.agency
-                </p>
+                </div>
               </div>
             </div>
 
@@ -93,7 +98,7 @@ const Footer = () => {
                   <h3 className="text-whitesmoke text-base font-montbold leading-[26px] font-bold">
                     Zagreb
                   </h3>
-                  <p className="text-lightgrey">
+                  <div className="text-lightgrey">
                     <ul>
                       <li className="font-sans text-sm leading-6">
                         Slavonska avenija 6,
@@ -105,28 +110,27 @@ const Footer = () => {
                         Croatia +385 99 347 3103
                       </li>
                     </ul>
-                  </p>
+                  </div>
                 </div>
                 <div>
                   <h3 className="text-whitesmoke text-base font-montbold leading-[26px] font-bold">
                     New York
                   </h3>
-                  <p className="text-lightgrey">
-                    <ul>
-                      <li className="font-sans text-sm leading-6">
-                        500 7th Ave, New York
-                      </li>
-                      <li className="font-sans text-sm leading-6">
-                        NY 10018, United States
-                      </li>
-                    </ul>
-                  </p>
+
+                  <ul className="text-lightgrey">
+                    <li className="font-sans text-sm leading-6">
+                      500 7th Ave, New York
+                    </li>
+                    <li className="font-sans text-sm leading-6">
+                      NY 10018, United States
+                    </li>
+                  </ul>
                 </div>
                 <div>
                   <h3 className="text-whitesmoke text-base font-montbold leading-[26px] font-bold">
                     Belgrade
                   </h3>
-                  <p className="text-lightgrey">
+                  <div className="text-lightgrey">
                     <ul>
                       <li className="font-sans text-sm leading-6">
                         {" "}
@@ -136,7 +140,7 @@ const Footer = () => {
                         Belgrade, Serbia
                       </li>
                     </ul>
-                  </p>
+                  </div>
                 </div>
               </div>
               <div className="hidden lg:flex lg:items-center lg:justify-between">

@@ -1,15 +1,15 @@
 const Consistent = () => {
   return (
     <div className="pt-[60px] pb-24 lg:pt-[140px] lg:pb-40 lg:relative">
-      <div className="relative pb-8 min-h-[132px]">
+      <div className="pb-8 min-h-[132px]">
         <div className="mx-auto container px-6">
-          <div class="font-montbold absolute -left-[10px] -top-[26px] text-[175px] text-symbcolor lg:text-[258px] lg:-top-14 ">
+          <div className="font-montbold absolute -left-[10px] -top-[26px] text-[175px] text-symbcolor lg:text-[258px] lg:-top-14 ">
             “
           </div>
           <div className="flex flex-cols lg:flex-row  lg:items-center lg:justify-between">
             <div className="lg:w-1/2">
               <h3 className="text-[32px] mb-8 lg:text-[40px] lg:leading-[56px] leading-[44px] font-normal font-montbold pt-12">
-                They’re consistent, and the communication is good.
+                They &apos;re consistent, and the communication is good.
               </h3>
 
               <div className="text-[16px] leading-[26px] text-matterhorn mb-8">

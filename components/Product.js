@@ -1,7 +1,9 @@
 const Product = ({ images, title, subtitle, tags, className }) => {
   return (
     <div className="flex flex-col gap-y-5 mb-16">
-      <div className={`group ${className} flex items-center justify-center overflow-hidden`}>
+      <div
+        className={`group ${className} flex items-center justify-center overflow-hidden`}
+      >
         <img
           src={images}
           alt=""

@@ -60,25 +60,61 @@ const Navbar = () => {
                   }
                 >
                   <li>
-                    <Link href="/project" className="font-montsemibold text-base leading-5 font-bold cursor-pointer"> Projects</Link>
+                    <Link
+                      href="/project"
+                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer"
+                    >
+                      {" "}
+                      Projects
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/service" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Services</Link>
+                    <Link
+                      href="/service"
+                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer"
+                    >
+                      Services
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/aboutUs" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">About Us</Link>
+                    <Link
+                      href="/aboutUs"
+                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer"
+                    >
+                      About Us
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/career" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Careers</Link>
+                    <Link
+                      href="/career"
+                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer"
+                    >
+                      Careers
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/blog" className="font-montsemibold text-base leading-5 font-bold cursor-pointer">Blog</Link>
+                    <Link
+                      href="/blog"
+                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer"
+                    >
+                      Blog
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="flex items-center gap-6">
-                <div className={isScrolled ? " border-2 border-blue-700 rounded-full w-[46px] h-[46px] flex items-center justify-center " : "border-2 border-white rounded-full w-[46px] h-[46px] flex items-center justify-center"}>
-                  <FontAwesomeIcon icon={faPlay} size="md" color={isScrolled ? " blue " : " white "} />
+                <div
+                  className={
+                    isScrolled
+                      ? " border-2 border-blue-700 rounded-full w-[46px] h-[46px] flex items-center justify-center "
+                      : "border-2 border-white rounded-full w-[46px] h-[46px] flex items-center justify-center"
+                  }
+                >
+                  <FontAwesomeIcon
+                    icon={faPlay}
+                    // size="5x"
+                    color={isScrolled ? " blue " : " white "}
+                  />
                 </div>
                 <div>
                   <button className="border-none px-12 py-4 text-white bg-blue-700 flex items-center justify-center">

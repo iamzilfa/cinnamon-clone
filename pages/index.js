@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <main className="pt-20">
+        <main className="pt-20 overflow-hidden">
           <Header />
 
           <Price />
