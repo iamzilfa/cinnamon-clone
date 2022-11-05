@@ -3,11 +3,10 @@ import Service from "../../Service";
 const Services = () => {
   return (
     <div className="bg-footerBanner text-white bg-blackrussian py-24 lg:pt-44 lg:pb-40">
-      <div className="px-6 mx-auto container">
-        <div>
-          <div className="grid lg:grid-cols-2 lg:gap-8">
-            <div className=" lg:mb-72px] ">
-              <h1 className="font-montbold text-[40px] lg:text-[54px] lg:leading-[72px]  leading-[56px] font-normal">
+      <div className="px-6 mx-auto container max-w-[1120px]">
+          <div className="grid w-3/4 lg:grid-cols-2 lg:gap-8 lg:w-full">
+            <div className="">
+              <h1 className="font-montbold text-[40px] lg:text-[54px] lg:leading-[72px]  leading-[56px] font-normal mb-10">
                 Our services
               </h1>
             </div>
@@ -53,7 +52,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

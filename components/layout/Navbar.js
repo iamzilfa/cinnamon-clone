@@ -1,5 +1,7 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from "../ui/Button";
+
 
 // import your icons
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
@@ -30,8 +32,7 @@ const Navbar = () => {
           (isScrolled ? " bg-white " : " bg-footerBanner bg-blackrussian ")
         }
       >
-        <div className="mx-auto container">
-          <div className="flex justify-between items-center h-20 w-full px-6">
+        <div className="mx-auto container max-w-[1120px] flex justify-between items-center h-20 w-full px-6">
             <Link href="/" className="w-40 h-5">
               <img
                 src={
@@ -106,7 +107,7 @@ const Navbar = () => {
                 <div
                   className={
                     isScrolled
-                      ? " border-2 border-blue-700 rounded-full w-[46px] h-[46px] flex items-center justify-center "
+                      ? " border-2 border-blue-700 rounded-full w-[46px] h-[46px] flex items-center justify-center"
                       : "border-2 border-white rounded-full w-[46px] h-[46px] flex items-center justify-center"
                   }
                 >
@@ -117,13 +118,10 @@ const Navbar = () => {
                   />
                 </div>
                 <div>
-                  <button className="border-none px-12 py-4 text-white bg-blue-700 flex items-center justify-center">
-                    Contact Us
-                  </button>
+                 <Button primary>Contact us</Button>
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>

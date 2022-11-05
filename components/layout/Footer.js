@@ -190,9 +190,10 @@ const Footer = () => {
                     type="text"
                     placeholder="Your E-mail"
                   />
+                </div> 
+                <div>
+                <Button primary >Subscribe</Button>
                 </div>
-
-                <Button primary>Subscribe</Button>
               </div>
             </div>
             <div>

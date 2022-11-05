@@ -57,7 +57,7 @@ const Price = () => {
       ];
 
     return ( 
-        <div className="px-6 mx-auto container">
+        <div className="px-6 mx-auto container max-w-[1120px]">
         <div className="lg:mb-40">
           <div>
             {cards.map((card, index) => {

@@ -4,7 +4,7 @@ const Button = ({ children ="hf", primary, className }) => {
       <button
         className={`${
           primary
-            ? "bg-buttonblue text-white flex justify-center items-center cursor-pointer text-base border-2 border-buttonblue font-sans px-8 pt-4 pb-3"
+            ? "bg-bgButton text-white flex justify-center items-center cursor-pointer text-base border-2 border-bgButton hover:bg-white hover:text-buttonblue font-sans px-8 pt-4 pb-3"
             : "bg-red-400"
         } ${className}`}
       >

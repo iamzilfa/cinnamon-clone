@@ -25,6 +25,8 @@ module.exports = {
         symbcolor: "rgba(81, 53, 255, 0.1)",
         greywhite: "#F9F9F9",
         bottomgrey: "#3F3F3F",
+        bgButton: "rgb(81 53 255)",
+        iconColor:"rgb(29 78 216)"
       },
       fontFamily: {
         sans: "'Mont',sans-serif",
