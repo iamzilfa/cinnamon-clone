@@ -16,10 +16,10 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="bg-footerBanner bg-blackrussian w-full pt-20">
-      <div className="px-6 mx-auto container">
+      <div className="px-6 mx-auto container max-w-[1120px]">
         <div className="flex flex-col gap-y-20 lg:gap-y-2">
           <div className="lg:grid lg:grid-cols-2 ">
-            <div className="flex flex-col gap-16">
+            <div className="flex flex-col gap-12">
               <div className="w-40 h-5">
                 <img src="/vectors/logo-white.svg" alt="" />
               </div>
@@ -93,7 +93,7 @@ const Footer = () => {
               <h2 className="text-whitesmoke text-2xl leading-9 font-montbold font-normal hidden lg:block lg:text-[32px] lg:leading-[36px] lg:font-montbold lg:font-normal">
                 All software, zero bullshit.
               </h2>
-              <div className="grid grid-cols-2 gap-6 lg:flex lg:gap-20">
+              <div className="grid grid-cols-2 gap-6 lg:flex lg:gap-14">
                 <div>
                   <h3 className="text-whitesmoke text-base font-montbold leading-[26px] font-bold">
                     Zagreb
@@ -143,12 +143,12 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="hidden lg:flex lg:items-center lg:justify-between">
-                <div className="flex flex-col gap-y-3">
+              <div className="hidden lg:flex lg:items-center lg:justify-between  ">
+                <div className="flex flex-col md:w-[280px]">
                   <p className="text-whitesmoke text-base font-montbold leading-[26px]">
                     Our newsletter
                   </p>
-                  <div className="flex flex-col gap-y-8">
+                  <div className="flex flex-col space-y-4">
                     <div className="border-b border-b-lightgrey">
                       <input
                         className="bg-transparent outline-none py-5"
@@ -157,7 +157,7 @@ const Footer = () => {
                       />
                     </div>
                     <div>
-                      <Button primary>Subscribe</Button>
+                      <Button primary className="lg:w-full">Subscribe</Button>
                     </div>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ const Footer = () => {
                     />
                   </div>
                   <div>
-                    <img src="/images/clutch-badge.png" alt="" />
+                    <img src="/images/clutch-badge.png" alt="" className="w-[216px] h-[65px]" />
                   </div>
                 </div>
               </div>
@@ -211,7 +211,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="block lg:hidden">
-                  <p className="text-lightgrey underline">
+                  <p className="text-lightgrey underline cursor-pointer">
                     hello@cinnamon.agency
                   </p>
                 </div>
@@ -219,16 +219,16 @@ const Footer = () => {
             </div>
             <div className="flex flex-col py-9 gap-y-5 -mt-9 lg:flex-row-reverse lg:justify-between border-t border-t-topgrey pt-5">
               <div className="text-white flex justify-center items-center gap-5 ">
-                <FontAwesomeIcon icon={faLinkedin} size="lg" />
-                <FontAwesomeIcon icon={faDribbble} size="lg" />
-                <FontAwesomeIcon icon={faSquareBehance} size="lg" />
-                <FontAwesomeIcon icon={faInstagram} size="lg" />
-                <FontAwesomeIcon icon={faFacebook} size="lg" />
-                <FontAwesomeIcon icon={faRss} size="lg" />
+                <FontAwesomeIcon icon={faLinkedin} size="lg" className="cursor-pointer" />
+                <FontAwesomeIcon icon={faDribbble} size="lg" className="cursor-pointer" />
+                <FontAwesomeIcon icon={faSquareBehance} size="lg" className="cursor-pointer" />
+                <FontAwesomeIcon icon={faInstagram} size="lg" className="cursor-pointer" />
+                <FontAwesomeIcon icon={faFacebook} size="lg" className="cursor-pointer" />
+                <FontAwesomeIcon icon={faRss} size="lg" className="cursor-pointer" />
               </div>
               <div className="flex items-center justify-center gap-8 text-white text-base border-t border-t-topgrey pt-5 lg:border-none">
                 <p>© 2022 Cinnamon</p>
-                <p className="underline">Privacy Policy</p>
+                <p className="underline cursor-pointer">Privacy Policy</p>
               </div>
             </div>
           </div>

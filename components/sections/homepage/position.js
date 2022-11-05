@@ -3,13 +3,13 @@ import Button from "../../ui/Button";
 const Position = () => {
   return (
     <div className="bg-footerBanner bg-blackrussian py-24">
-      <div className="mx-auto container px-6">
-        <div className="grid lg:grid-cols-2 lg:gap-64 px-6">
-          <div className="mb-16">
-            <h1 className="text-[40px] leading-[56px] mb-4 text-greywhite font-normal font-montbold lg:mb-6 lg:text-[54px] ">
+      <div className="mx-auto container px-6 max-w-[1120px]">
+        <div className="grid lg:grid-cols-2 lg:gap-64">
+          <div className="mb-16 flex flex-col space-y-8">
+            <h1 className="text-[40px] leading-[56px] text-greywhite font-normal font-montbold lg:mb-6 lg:text-[54px] ">
               We’re growing
             </h1>
-            <p className="text-base leading-[26px] text-lightgrey mb-8 font-sans">
+            <p className="text-base leading-[26px] text-lightgrey font-sans">
               Jump on board with Cinnamon and get the privilege of working on
               challenging projects for leading global companies! Make the world
               a better, more connected place.

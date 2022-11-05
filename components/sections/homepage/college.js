@@ -3,14 +3,14 @@ import Paragraph from "../../Paragraph";
 const College = () => {
   return (
     <div className="py-24 bg-white lg:py-40 lg:relative">
-      <div className="hidden lg:block absolute right-0 -bottom-[13px]">
+      <div className="hidden lg:block absolute right-0 -bottom-0">
         <img
           src="/images/image (7).png"
           alt=""
           className="lg:w-[556px] lg:h-[402px]"
         />
       </div>
-      <div className="mx-auto container">
+      <div className="mx-auto container max-w-[1120px]">
         <div className="px-6 container mx-auto">
           <div className="grid lg:grid-cols-3 lg:items-center lg:gap-8">
             <div className="">

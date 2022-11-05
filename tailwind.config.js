@@ -26,7 +26,8 @@ module.exports = {
         greywhite: "#F9F9F9",
         bottomgrey: "#3F3F3F",
         bgButton: "rgb(81 53 255)",
-        iconColor:"rgb(29 78 216)"
+        iconColor: "rgb(29 78 216)",
+        dotColor: "#FFCB47",
       },
       fontFamily: {
         sans: "'Mont',sans-serif",

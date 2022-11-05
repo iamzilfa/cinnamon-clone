@@ -3,7 +3,7 @@ import Button from "../../ui/Button";
 const Department = () => {
   return (
     <div className="bg-whitesmoke py-24 lg:py-[245px]">
-      <div className="px-6 container mx-auto">
+      <div className="px-6 container mx-auto max-w-[1120px]">
         <h2 className="text-[40px] leading-[56px] mb-4 font-montbold font-normal text-titleblack lg:mb-8 lg:text-[54px] lg:leading-[72px]">
           Who we are
         </h2>

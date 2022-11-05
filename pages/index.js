@@ -8,6 +8,7 @@ import Position from "../components/sections/homepage/position";
 import College from "../components/sections/homepage/college";
 import Department from "../components/sections/homepage/department";
 import Consistent from "../components/sections/homepage/consistent";
+import Topic from "../components/sections/homepage/topic";
 
 export default function Home() {
   return (
@@ -29,6 +30,8 @@ export default function Home() {
           <College />
 
           <Position />
+
+          <Topic />
 
           <Together />
         </main>

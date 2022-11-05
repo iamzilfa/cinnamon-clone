@@ -107,8 +107,8 @@ const Navbar = () => {
                 <div
                   className={
                     isScrolled
-                      ? " border-2 border-blue-700 rounded-full w-[46px] h-[46px] flex items-center justify-center"
-                      : "border-2 border-white rounded-full w-[46px] h-[46px] flex items-center justify-center"
+                      ? " border-2 border-blue-700 rounded-full w-[46px] h-[46px] flex items-center justify-center "
+                      : "border-2 border-white rounded-full w-[46px] h-[46px] flex items-center justify-center hover:bg-buttonblue hover:border-buttonblue"
                   }
                 >
                   <FontAwesomeIcon
