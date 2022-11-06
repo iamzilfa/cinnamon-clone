@@ -1,26 +1,33 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "MontBold";
+  src: url("/fonts/MontBold.woff");
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "MontHeavy";
+  src: url("/fonts/MontHeavy.woff");
+}
+@font-face {
+  font-family: "Mont";
+  src: url("/fonts/MontRegular.woff");
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "MontSemiBold";
+  src: url("/fonts/MontSemiBold.woff");
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
+
+
+img.theImage:hover ~ h4.theFour {
+  color: #5135FD;
+}
+
+
