@@ -9,6 +9,7 @@ import College from "../components/sections/homepage/college";
 import Department from "../components/sections/homepage/department";
 import Consistent from "../components/sections/homepage/consistent";
 import Topic from "../components/sections/homepage/topic";
+import Office from "../components/Office";
 
 export default function Home() {
   return (
@@ -30,6 +31,8 @@ export default function Home() {
           <College />
 
           <Position />
+
+          <Office />
 
           <Topic />
 

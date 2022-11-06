@@ -20,3 +20,14 @@
   font-family: "MontSemiBold";
   src: url("/fonts/MontSemiBold.woff");
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+
+img.theImage:hover ~ h4.theFour {
+  color: #5135FD;
+}
+
+

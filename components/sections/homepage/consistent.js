@@ -10,11 +10,11 @@ const Consistent = () => {
                   <div className="font-montbold absolute lg:-left-[94px] text-[175px] text-symbcolor lg:text-[258px] lg:-top-[26px] ">
                     “
                   </div>
-                  <h3 className="text-[32px] lg:text-[40px] lg:leading-[56px]  leading-[44px] font-normal font-montbold pt-12">
+                  <h3 className="text-[32px] lg:text-[40px] lg:leading-[56px] leading-[44px] font-normal font-montbold pt-24">
                     They &apos;re consistent, and the communication is good.
                   </h3>
                 </div>
-                <div className="text-[16px] leading-[26px] text-matterhorn mb-8">
+                <div className="text-[16px] lg:pt-6 leading-[26px] text-matterhorn mb-8 lg:w-5/6">
                   <p className="text-matterhorn text-base leading-[26px]">
                     When I have a deadline, they would work extra hours on the
                     weekend and after hours. Cinnamon gives the impression of
@@ -35,11 +35,11 @@ const Consistent = () => {
                   </div>
                 </div>
               </div>
-              <div className="hidden lg:block lg:w-[200px] lg:h-[200px]">
+              <div className="hidden lg:block pt-28 lg:w-[350px] lg:h-[350px]">
                 <img
                   src="/images/image (10).png"
                   alt=""
-                  className="lg:w-[200px] lg:h-[67.937px]"
+                  // className="lg:h-[67.94px] lg:w-full"
                 />
               </div>
             </div>
