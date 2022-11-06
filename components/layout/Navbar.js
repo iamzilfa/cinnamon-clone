@@ -56,14 +56,14 @@ const Navbar = () => {
               <div>
                 <ul
                   className={
-                    "flex items-center gap-10 font-sans text-base leading-4" +
+                    "flex items-center gap-10 font-sans text-base leading-4 " +
                     (isScrolled ? " text-black " : " text-white ")
                   }
                 >
                   <li>
                     <Link
                       href="/project"
-                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer"
+                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer hover:text-blue-700"
                     >
                       {" "}
                       Projects
@@ -72,7 +72,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       href="/service"
-                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer"
+                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer hover:text-blue-700"
                     >
                       Services
                     </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       href="/aboutUs"
-                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer"
+                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer hover:text-blue-700"
                     >
                       About Us
                     </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       href="/career"
-                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer"
+                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer hover:text-blue-700"
                     >
                       Careers
                     </Link>
@@ -96,7 +96,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       href="/blog"
-                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer"
+                      className="font-montsemibold text-base leading-5 font-bold cursor-pointer hover:text-blue-700"
                     >
                       Blog
                     </Link>
